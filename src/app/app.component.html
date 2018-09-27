@@ -1,0 +1,38 @@
+<div class="componet">
+    <br>
+    <table class="table table-dark">
+        <thead>
+            <tr>
+                <th scope="col">Variable</th>
+                <th scope="col">--> Pipe usado ->></th>
+                <th scope="col">Resultado</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>{{nombre}}</td>
+                <td>Uppercase</td>
+                <td>{{nombre | uppercase}}</td>
+            </tr>
+            <tr>
+                <td>{{nombre}}</td>
+                <td>Lowercase</td>
+                <td>{{nombre | lowercase}}</td>
+            </tr>
+            <tr>
+                <td>{{nombre}}</td>
+                <td>slice:4:20</td>
+                <td>{{nombre | slice:4:20}}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="lista">
+        <h3>slice 4:20</h3>
+        <ul *ngFor="let item of arreglo | slice:4:20">
+            <li> {{item }}</li>
+        </ul>
+
+    </div>
+
+</div>
